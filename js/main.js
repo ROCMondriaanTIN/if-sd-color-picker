@@ -1,7 +1,11 @@
-const bgColor = {
-    r: 12, 
-    g: 50,
-    b: 100,
+//Variables
+const redSlider = document.querySelector("input.red");
+
+const backgroundColor = {
+    red: 12, 
+    green: 50,
+    blue: 100,
+
     toCSS: function (){
         let result = `rgb(${this.r},${this.g}, ${this.b})`;
         return result;
@@ -15,16 +19,15 @@ const bgColor = {
 
 
 
-const redSlider = document.querySelector("input.red");
+//Event listeners
 redSlider.addEventListener("change", (event)=>{
-    bgColor.r = event.target.value;
+    backgroundColor.red = event.target.value;
     
     changeCircleColor();
 });
 
-
+//Functions
 function changeCircleColor(){
     const circleDiv = document.querySelector("div.circle");
-    circleDiv.style.backgroundColor = bgColor.toCSS(); 
-    
+    circleDiv.style.backgroundColor = backgroundColor.toCSS();    
 }
