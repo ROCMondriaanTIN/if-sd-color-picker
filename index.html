@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,61 +8,55 @@
     <title>Color Picker</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <img src="img/3types.png" alt="" srcset="">
-    <h1>Color Picker</h1>
-    <p>
-        Het RGB-kleursysteem is een kleurcodering, een manier om een kleur uit te drukken met behulp van een combinatie van 
-        de drie primaire kleuren Rood-Groen-Blauw, uitgaande van additieve kleurmenging. 
-        De hoeveelheid van elke primaire kleur die benodigd is om de mengkleur te verkrijgen, 
-        wordt uitgedrukt in een getal dat meestal uit 8 bits bestaat en kan variëren tussen 0 en 255. 
-        Voor HTML-toepassingen en cascading style sheets wordt hiervoor veelal het hexadecimale stelsel gebruikt, 
-    </p>
-    <ol>
-        <h2>Opdracht 1</h2>
-        <li>Zorg ervoor dat de span tags worden gevuld met het waarde van de kleur-slider.</li>
-        <li>Zorg ervoor dat de kleuren gemixt worden en getoond wordt op het scherm.</li>
-        <li>Toon in de paragraaf met de klasse result de kleur met de hoogste waarde.</li>
-    </ol>
-    
-  
-    
-    R <input type="range" class="red" name="red" min="0" max="255" value="125">  <span class="r-value">125</span> <br>
-    G <input type="range" min="0" max="10" value="6"> <span>6</span> <br>
-    B <input type="range" min="0" max="10" value="1"> <span>1</span> <br>
+    <div class="container">
+        <img src="img/color-pick-1.png" width="420px" alt="" srcset="">
+        <h1>Bouw een eigen Color Picker 🥳</h1>
+        <p>
+            De color picker is een RGB-kleursysteem waarmee we een kleur kunnen bepalen a.h.v. de waarden van
+            drie primaire kleuren, namelijk: Rood, Groen, en Blauw. Dit kennen jullie vast wel van HTML/CSS.
+            Elk van de primaire kleur mag een waarde hebben tussen 0 en 255. Dus niet lager dan of hoger dan 255!
+            <br />
+            Zie hieronder een voorbeeld:
+        </p>
 
+        R <input type="range" class="red" name="red" min="0" max="255" value="125"> <span class="r-value">125</span>
+        <br>
+        G <input type="range" min="0" max="10" value="6"> <span>6</span> <br>
+        B <input type="range" min="0" max="10" value="1"> <span>1</span> <br>
 
-    <p class="result">In de volgende circle zit rood het meest in</p>
-    <div class="circle">
+        <p class="result">In de volgende circle zit rood het meest in</p>
+        <div class="circle">
+
+        </div>
+
+        <p>Een color picker heeft de volgende onderdelen:
+        <ol>
+            <li>Een manier om elke primaire kleur (rood, groen en blauw) een waarde te geven tussen 0 en 255.
+                Dat mag je doen met een slider, een input-veld of iets anders.
+            </li>
+            <li>
+                De kleurwaarden vertalen naar een kleur.
+            </li>
+            <li>
+                Een element om het resultaat van de kleur terug te zien.
+            </li>
+        </ol>
+        </p>
+
+        <h2>Uitdaging</h2>
+        <ul>
+            <li>Hoe ga je de kleurwaarden instellen en uitlezen (met een slider, een input veld, of iets anders?)</li>
+            <li>Hoe vertaal je de kleurwaarden in getallen naar een kleur?</li>
+            <li>Hoe toon je het resultaat?</li>
+        </ul>
+
+        <p>Maak een zo stoer en origineel mogelijke color picker 😎</p>
+        <p><strong>Let op! </strong>Je mag geen ingebouwde colorpicker gebruiken m.b.v. input element!</p>
+        <p><strong>Let the hacking begin!</strong></p>
 
     </div>
-    <hr>
-    <p>
-        Het weergeven van kleuren met de drie dimensies, zoals in HSL, levert een driedimensionaal model op (vandaar: ruimte) waarin elke kleur een eigen punt heeft. Zo is de RGB-kleurruimte een kubus, met op elke kleur-as Rood, Groen, Blauw een intensiteit van die kleur (0-100%, of hexadecimaal 00-FF). De HSL-ruimte heeft de vorm van een dubbele kegel. De twee toppen vertegenwoordigen zwart en wit. De dimensies zijn:
-    </p>
-
-    <ul>
-        <li>
-            Hue (Nederlands: tint), is wat we gewoonlijk 'kleur' noemen. <br>
-            In het HSL-model is de kleur uitgezet in een cirkelvorm om de centrale as. Het aantal graden geeft eenduidig een tint aan. Een volle omgang van 360° over zo'n cirkel doorloopt precies de kleuren van de regenboog.
-        </li>
-        <li>
-            Saturation (Nederlands: verzadiging). <br>
-            De verzadiging wordt aangegeven als de afstand tot de centrale as, in procenten (100% = de buitenrand halverwege; 0% is de centrale as, die alleen maar grijs is).
-        </li>
-        <li>
-            Lightness (Nederlands: helderheid, lichtheid, grijsheid) is de licht/donkerheid van een kleur, lopend van zwart naar wit.  <br>
-            Deze maat wordt aangegeven op de centrale as van het model, in procenten (100% = de witte top).
-        </li>
-    </ul>
-    
-    <h2>Opdracht 2</h2>
-    <ol>
-        <li>Maak een color picker met het HSL model. Je heeft hiervoor 3 variabelen nodig. de Hue (bv. 360deg), Saturation (in percentage), Lightness (in percentage)</li>
-        <li>Toon de kleur in een mooi division</li>
-        <li>Bereken de complementaire kleur. Dit is de kleurtint + 180deg </li>
-    </ol>
-
-    <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -1,7 +1,16 @@
-.circle{
-    width:10rem;
-    height:10rem;
-    border: 1rem solid black;
-    border-radius: 50%;
-    background-color: rgb(125,6,1);
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.circle {
+	width: 10rem;
+	height: 10rem;
+	border: 1rem solid black;
+	border-radius: 50%;
+	background-color: rgb(125, 6, 1);
+}
+
+.container {
+	width: 680px;
+	margin: 0 auto;
 }
