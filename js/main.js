@@ -37,3 +37,4 @@ function changeCircleColor(){
     circleDiv.style.backgroundColor = bgColor.toCSS(); 
     
 }
+
